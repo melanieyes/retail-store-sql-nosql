@@ -8,8 +8,8 @@ This project is a **Retail Store Management System** that integrates both SQL (M
 ## Features
 - **SQL Integration**: MySQL is used for relational data storage and operations.
 - **NoSQL Integration**:
-  - MongoDB for managing semi-structured and document-based data.
-  - Redis for caching and handling fast key-value store operations.
+  - MongoDB (Cloud) for managing semi-structured and document-based data.
+  - Redis (Cloud) for caching and handling fast key-value store operations.
 - **Retail Operations**:
   - Product inventory management.
   - Customer information tracking.
@@ -26,7 +26,7 @@ This project is a **Retail Store Management System** that integrates both SQL (M
 
 ### Databases:
 - **SQL Database**: MySQL
-- **NoSQL Databases**: MongoDB, Redis
+- **NoSQL Databases**: MongoDB (Cloud), Redis (Cloud)
 
 ---
 
@@ -34,8 +34,8 @@ This project is a **Retail Store Management System** that integrates both SQL (M
 ### Prerequisites:
 1. **Java Development Kit (JDK)** installed.
 2. **MySQL Server** installed and running.
-3. **MongoDB** installed and running.
-4. **Redis** installed and running.
+3. **MongoDB Cloud Account** set up and a cluster created.
+4. **Redis Cloud Account** set up and an instance created.
 5. **Maven** for dependency management.
 
 ### Steps:
@@ -48,10 +48,11 @@ This project is a **Retail Store Management System** that integrates both SQL (M
    - **MySQL**:
      - Create a database and import the schema from `sql/schema.sql`.
      - Update MySQL credentials in the `config.properties` file.
-   - **MongoDB**:
-     - Set up collections using the provided scripts in `nosql/mongodb/`.
-   - **Redis**:
-     - Start the Redis server and configure it in the application.
+   - **MongoDB (Cloud)**:
+     - Connect to your MongoDB Cloud cluster and set up collections using the provided scripts in `nosql/mongodb/`.
+     - Update MongoDB connection string in the `config.properties` file.
+   - **Redis (Cloud)**:
+     - Connect to your Redis Cloud instance and configure the connection string in the application.
 
 3. Build the project:
    ```bash
@@ -93,39 +94,4 @@ This project is a **Retail Store Management System** that integrates both SQL (M
 |-- README.md                                # Project documentation
 ```
 
----
-
-## Contributing
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Description of changes"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a pull request.
-
----
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
----
-
-## Acknowledgments
-- Open-source communities for MySQL, MongoDB, and Redis.
-- Contributors and reviewers for their feedback and support.
-
----
-
-## Contact
-For queries or feedback, please reach out at:
-- **Email**: [Your Email]
-- **GitHub**: [Your GitHub Profile]
 
