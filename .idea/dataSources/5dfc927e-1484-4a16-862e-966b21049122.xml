@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="store@localhost">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.45">
+    <root id="1">
+      <DefaultCasing>lower/lower</DefaultCasing>
+      <ServerVersion>8.0.34</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="assignment"/>
+    <schema id="3" parent="1" name="faculty"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="project_management"/>
+    <schema id="8" parent="1" name="retail_store"/>
+    <schema id="9" parent="1" name="sakila"/>
+    <schema id="10" parent="1" name="store">
+      <Current>1</Current>
+    </schema>
+    <schema id="11" parent="1" name="sys"/>
+    <schema id="12" parent="1" name="tracking"/>
+  </database-model>
+</dataSource>
